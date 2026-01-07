@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+$primary-font:  "DM Sans", serif;
+
+$primary-color: #FEc748;
+$primary-white: #FFF;
+$primary-black: #000;
+$secondary-color: #af6a0f;
+$tertiary-color: #3e8fda;
+$bg-light: #f6f3f3;
+$text-grey: #585858;
+
+body{
+   font-family: $primary-font; 
+   background-color: $bg-light;
+   font-size: 1em;
+}
+
+ul{
+    padding-left: 0;
+    li{
+        list-style: none;
+    }
+}
+
+.btn{
+    padding: 8px 20px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2,
+.h2{
+    font-size: 2.5em;
+}
+
+h3,
+.h3{
+    font-size: 2em;
+}
+
+h4,
+.h4{
+    font-size: 1.5em;
+}
+
+
+.container{
+    max-width: 1600px;
+}
+
+a{
+    color:$primary-black;
+    text-decoration: none;
+    &:hover{
+        color: $secondary-color;
+    }
+}
+
+.bg-green{
+    background-color: $secondary-color;
+}
+
+p{
+    font-size: 1em;
+}
+
+.btn-primary{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+    
+}
+
+.btn-primary.disabled{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.btn-white{
+    background-color: $primary-white;
+    border-color: $primary-white;
+    color: $secondary-color;
+    &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+ 
+    
+
+.login, 
+.register{
+    width: 450px;
+}
+

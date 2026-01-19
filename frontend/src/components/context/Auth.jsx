@@ -9,7 +9,7 @@ export const AuthProvider = ({children}) => {
     const [user, setUser] = useState(userInfo);
 
     const login = (user) => {
-        serUser(user);
+        setUser(user);
     }
 
     const logout = () => {

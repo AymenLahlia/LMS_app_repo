@@ -17,6 +17,8 @@
     "filepond-plugin-image-exif-orientation": "^1.0.11",
     "filepond-plugin-image-preview": "^4.6.12",
     "jodit-react": "^5.2.38",
+    "lucide-react": "^0.562.0",
+    "motion": "^12.26.2",
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",

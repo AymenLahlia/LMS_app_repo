@@ -14,6 +14,7 @@ import CreateCourse from './components/pages/account/courses/CreateCourse'
 import Dashboard from './components/pages/account/Dashboard'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import EditCourse from './components/pages/account/courses/EditCourse';
 function App() {
   return (
     <>
@@ -37,6 +38,11 @@ function App() {
           <Route path='/account/courses/create' element={
             <RequireAuth>
               <CreateCourse />
+            </RequireAuth>
+          } />
+          <Route path='/account/courses/edit/:id' element={
+            <RequireAuth>
+              <EditCourse />
             </RequireAuth>
           } />
         </Routes>

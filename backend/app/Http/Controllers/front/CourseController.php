@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use Illuminate\Support\Facades\Validator;
-
+use App\Models\Category;
+use App\Models\Level;
+use App\Models\Language;
 class CourseController extends Controller
 {
     // Return all courses for the authenticated user
@@ -100,4 +102,20 @@ class CourseController extends Controller
         'data' => $course,
     ], 200);
 }
-}
+
+// this method will return the metadata for courses (categories, levels, languages)
+    public function metadata(){
+        $categories = Category::all();
+        $levels = Level::all();
+        $languages = Language::all();
+
+        return response()->json([
+            'status' => 200,
+            'data' => [
+                'categories' => $categories,
+                'levels' => $levels,
+                'languages' => $languages,
+            ],
+        ], 200);
+    }
+} 
